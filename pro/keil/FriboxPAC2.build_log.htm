@@ -1,0 +1,112 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\Project\FriBox PAC2\software\FriboxPAC2\pro\keil\FriboxPAC2.uvprojx
+Project File Date:  10/17/2017
+
+<h2>Output:</h2>
+Rebuild target 'FriboxPAC2'
+compiling main.c...
+..\..\app\main.c(4): warning:  #177-D: function "testPrint" was declared but never referenced
+  static void testPrint(void)
+..\..\app\main.c: 1 warning, 0 errors
+compiling ili9341.c...
+..\..\app\display\ili9341.c(249): warning:  #177-D: function "ili9341DmaWriteData" was declared but never referenced
+  static void ili9341DmaWriteData(uint8_t *data, uint16_t len)
+..\..\app\display\ili9341.c(289): warning:  #177-D: function "bgr2rgb" was declared but never referenced
+  static uint16_t bgr2rgb(uint16_t c)
+..\..\app\display\ili9341.c(427): warning:  #177-D: function "ili9341DrawPoint" was declared but never referenced
+  static void ili9341DrawPoint(uint16_t x, uint16_t y)
+..\..\app\display\ili9341.c(434): warning:  #177-D: function "ili9341FastDrawPoint" was declared but never referenced
+  static void ili9341FastDrawPoint(uint16_t x, uint16_t y, uint16_t color)
+..\..\app\display\ili9341.c(448): warning:  #177-D: function "ili9341LCDFill" was declared but never referenced
+  static void ili9341LCDFill(uint16_t xsta, uint16_t ysta, uint16_t xend, uint16_t yend, uint16_t color)
+..\..\app\display\ili9341.c: 5 warnings, 0 errors
+compiling Button.c...
+..\..\app\Button.c(13): warning:  #188-D: enumerated type mixed with another type
+  static MotorSpeedLevel_t g_speedlevel = 1;
+..\..\app\Button.c(64): warning:  #188-D: enumerated type mixed with another type
+                  g_speedlevel = 1;
+..\..\app\Button.c(71): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+              Ili9341LCDDisplayString(0, 250, 24, 48, buff, LCD_COLOR_GRAY);
+..\..\app\Button.c: 3 warnings, 0 errors
+compiling PMS7003.c...
+..\..\app\PMS7003.c(49): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+      Ili9341LCDDisplayString(0, 100, 24, 48, text, LCD_COLOR_GRAY);
+..\..\app\PMS7003.c(51): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+      Ili9341LCDDisplayString(0, 150, 24, 48, text, LCD_COLOR_GRAY);
+..\..\app\PMS7003.c: 2 warnings, 0 errors
+compiling ir.c...
+..\..\app\ir.c(21): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+          Ili9341LCDDisplayString(0, 50, 24, 48, buff, LCD_COLOR_GRAY);
+..\..\app\ir.c: 1 warning, 0 errors
+compiling Wifi.c...
+..\..\app\Wifi.c(319): warning:  #177-D: function "wifiChangeMode" was declared but never referenced
+  static void wifiChangeMode(WifiMode_t mode)
+..\..\app\Wifi.c: 1 warning, 0 errors
+compiling Motor.c...
+compiling Sys.c...
+compiling SysTimer.c...
+..\..\sys\SysTimer.c(44): warning:  #177-D: variable "istate" was declared but never referenced
+      uint8_t istate;
+..\..\sys\SysTimer.c: 1 warning, 0 errors
+".\FriboxPAC2.axf" - 0 Error(s), 14 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.1.0.pack
+                ARM::CMSIS:CORE:3.30.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.30.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.1.0.pack
+                Keil::Device:Startup:1.0.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  E:\Project\FriBox PAC2\software\FriboxPAC2\pro\keil\RTE
+  E:\Project\FriBox PAC2\software\FriboxPAC2\pro\keil\RTE\Device\STM32F103R8
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.30.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
+      Include file:  RTE_Driver\Config\RTE_Device.h
+      Source file:   Device\Source\ARM\startup_stm32f10x_md.s
+      Source file:   Device\Source\system_stm32f10x.c
+Project build/rebuild aborted.
+Clean started: Project: 'FriboxPAC2'
+   deleting intermediate output files for target 'FriboxPAC2'
+</pre>
+</body>
+</html>
+ Component include folders:</h2>
+  E:\Project\FriBox PAC2\software\FriboxPAC2\pro\keil\RTE
+  E:\Project\FriBox PAC2\software\FriboxPAC2\pro\keil\RTE\Device\STM32F103R8
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.30.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
+      Include file:  RTE_Driver\Config\RTE_Device.h
+      Source file:   Device\Source\ARM\startup_stm32f10x_md.s
+      Source file:   Device\Source\system_stm32f10x.c
+Target not created
+tem_stm32f10x.c
