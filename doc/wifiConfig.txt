@@ -1,0 +1,59 @@
+//Wifi模块初始化命令列表：
+
+//系统管理：用户名: fribox , 密码: fribox
+AT+WEBU=fribox,fribox
+
+//模式选择: AP+STP
+AT+WMODE=APSTA
+//网络名称（SSID）: FriBoxPac2-0001
+AT+WAP=11BGN,FriBoxPac2-0001,CH6
+//网络密码 (8-63位): FriBoxPac2
+AT+WAKEY=WPA2PSK,AES,FriBoxPac2
+//网络IP: 192.168.150.254
+AT+LANN=192.168.150.254,255.255.255.0
+
+//设置为无线配网，微信配网模式
+AT+SMTSL=air
+
+//串口网络参数设置： 透传模式
+AT+TMODE=throughput
+//SocketA设置： TCP-Server , 端口：17380 , 服务器地址：0.0.0.0
+AT+NETP=TCP,SERVER,17380,0.0.0.0
+//设置超时为0
+AT+TCPTO=0
+
+//SocketB设置： TCP-Client , 端口：17380 , 服务器地址：Dev.FriBox.cn
+AT+SOCKB=TCP,17380,Dev.FriBox.cn
+//设置超时为0
+AT+TCPTOB=0
+
+//搜索端口：17381 ， 搜索命令字：FriBox
+AT+SEARCH=17381
+AT+ASWD=FriBox
+
+//设置MID：FriBoxPac2-0001
+AT+WRMID=FriBoxPac2-0001
+
+//PING一下 Dev.FriBox.cn , 先解析一下
+//AT+PING=Dev.FriBox.cn
+
+//打开ntp时间同步
+AT+NTPEN=on
+
+//设置时间服务器
+AT+NTPSER=cn.pool.ntp.org,8
+
+//10分钟同步一次
+AT+NTPRF=10
+
+//查看是否同步成功
+AT+NTPTM
+
+//可有可无，让模块中 C215 不显示
+AT+REGUSR=FriBox-Pac2-20121221
+
+//将用户设置保存为出厂设置
+AT+CFGTF
+
+//重启wifi模块
+AT+Z
