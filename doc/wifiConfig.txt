@@ -43,8 +43,8 @@ AT+NTPEN=on
 //设置时间服务器
 AT+NTPSER=cn.pool.ntp.org,8
 
-//10分钟同步一次
-AT+NTPRF=10
+//30分钟同步一次
+AT+NTPRF=30
 
 //查看是否同步成功
 AT+NTPTM
